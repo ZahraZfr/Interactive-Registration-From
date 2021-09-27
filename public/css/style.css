@@ -28,6 +28,13 @@ body #bg {
   z-index: -1;
 }
 
+@media (min-width: 835px) {
+  body #bg {
+    -webkit-clip-path: polygon(0 0, 75% 0, 55% 100%, 0% 100%);
+            clip-path: polygon(0 0, 75% 0, 55% 100%, 0% 100%);
+  }
+}
+
 body main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -47,14 +54,38 @@ body main {
   margin-top: 20px;
 }
 
+@media (min-width: 835px) {
+  body main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% auto;
+        grid-template-columns: 50% auto;
+        grid-template-areas: "primary card";
+  }
+}
+
 body main form {
-  width: 80%;
   background-color: #f0ebeb;
   border-radius: 30px;
   overflow: hidden;
   padding: 20px 40px;
   -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
           box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 835px) {
+  body main form {
+    width: 400px;
+    grid-area: card;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin: 1em;
+    -webkit-box-shadow: 3px 10px 9px rgba(0, 0, 0, 0.2);
+            box-shadow: 3px 10px 9px rgba(0, 0, 0, 0.2);
+  }
 }
 
 body main form .form-control {
@@ -112,7 +143,7 @@ body main form .form-control button {
   padding: 10px 20px;
   width: 100%;
   border-radius: 15px;
-  border: 2px solid  #0354df;
+  border: 2px solid #0354df;
   cursor: pointer;
 }
 
@@ -128,6 +159,16 @@ body main #primary {
   color: #fff;
   padding: 15px;
   text-align: center;
+}
+
+@media (min-width: 835px) {
+  body main #primary {
+    grid-area: primary;
+    text-align: left;
+    margin: 4em 0 0 4em;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
 }
 
 body main #primary h1 {
