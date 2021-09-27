@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$padding:15px;
+$Colors: (primary : #005dff,
+    accent : #fff6bb);
+
+// use function in sass
+@function color($color-name) {
+    @return map-get($Colors, $color-name)
+}
+
+body {
+    font-family: 'Montserrat';
+    overflow: hidden;
+
+    header {
+        a {
+            text-decoration: none;
+            color: #fff;
+            padding: $padding;
+            display: block;
+            text-transform: uppercase;
+        }
+    }
+
+    #bg {
+        clip-path: polygon(100% 0, 100% 82%, 45% 100%, 0 100%, 0 0);
+        // background-color: map-get($Colors, $primary);
+        background-color: color(primary);
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+    }
+
+    main {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        margin-top: 20px;
+
+        form {
+            width: 80%;
+            background-color: #f0ebeb;
+            border-radius: 30px;
+            overflow: hidden;
+            padding: 20px 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,.2);
+
+            .form-control {
+                margin-bottom: 12px;
+                padding-bottom: 10px;
+                position: relative;
+
+                label {
+                    display: inline-block;
+                    margin-bottom: 5px;
+                }
+
+                input {
+                    display: block;
+                    width: 100%;
+                    padding: 13px 10px;
+                    border-radius: 15px;
+                    background-color: #ffffff;
+                    border: 2px solid #f0ebeb;
+                    box-shadow: 0px 8px 21px -3.41px #cfcfcf;
+
+
+                }
+                input:first-child{
+                    margin-top: 12px;
+                }
+                input::placeholder {
+                    color: #a7a7a7;
+                }
+
+                small {
+                    position: absolute;
+                    margin: 3px;
+                    font-size: 12px;
+                }
+
+                button {
+                    margin-top: 10px;
+                    background-color: #0354df;
+                    color: #fff;
+                    padding: 10px 20px;
+                    width: 100%;
+                    border-radius: 15px;
+                    border: 2px solid  #0354df;
+                    cursor: pointer;
+                }
+            }
+
+            .form-control.success input {
+                border: 2px solid green;
+            }
+
+            .form-control.error input {
+                border: 2px solid rgb(250, 99, 11);
+            }
+        }
+        // second part
+        #primary{
+            color: #fff;
+            padding: $padding;
+            text-align: center;
+            h1{
+                font-size: 2em;
+                margin-top: 10px;
+                text-transform: uppercase;
+                text-shadow: 2px 2px #0354df;
+            }
+            p{
+                font-size: 1em;
+                text-shadow: 2px 2px #0354df;
+            }
+        }
+    }
+}
+
+body,
+html {
+    height: 100%;
+}

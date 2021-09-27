@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat';
+  overflow: hidden;
+}
+
+body header a {
+  text-decoration: none;
+  color: #fff;
+  padding: 15px;
+  display: block;
+  text-transform: uppercase;
+}
+
+body #bg {
+  -webkit-clip-path: polygon(100% 0, 100% 82%, 45% 100%, 0 100%, 0 0);
+          clip-path: polygon(100% 0, 100% 82%, 45% 100%, 0 100%, 0 0);
+  background-color: #005dff;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+body main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  margin-top: 20px;
+}
+
+body main form {
+  width: 80%;
+  background-color: #f0ebeb;
+  border-radius: 30px;
+  overflow: hidden;
+  padding: 20px 40px;
+  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+body main form .form-control {
+  margin-bottom: 12px;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+body main form .form-control label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+body main form .form-control input {
+  display: block;
+  width: 100%;
+  padding: 13px 10px;
+  border-radius: 15px;
+  background-color: #ffffff;
+  border: 2px solid #f0ebeb;
+  -webkit-box-shadow: 0px 8px 21px -3.41px #cfcfcf;
+          box-shadow: 0px 8px 21px -3.41px #cfcfcf;
+}
+
+body main form .form-control input:first-child {
+  margin-top: 12px;
+}
+
+body main form .form-control input::-webkit-input-placeholder {
+  color: #a7a7a7;
+}
+
+body main form .form-control input:-ms-input-placeholder {
+  color: #a7a7a7;
+}
+
+body main form .form-control input::-ms-input-placeholder {
+  color: #a7a7a7;
+}
+
+body main form .form-control input::placeholder {
+  color: #a7a7a7;
+}
+
+body main form .form-control small {
+  position: absolute;
+  margin: 3px;
+  font-size: 12px;
+}
+
+body main form .form-control button {
+  margin-top: 10px;
+  background-color: #0354df;
+  color: #fff;
+  padding: 10px 20px;
+  width: 100%;
+  border-radius: 15px;
+  border: 2px solid  #0354df;
+  cursor: pointer;
+}
+
+body main form .form-control.success input {
+  border: 2px solid green;
+}
+
+body main form .form-control.error input {
+  border: 2px solid #fa630b;
+}
+
+body main #primary {
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
+
+body main #primary h1 {
+  font-size: 2em;
+  margin-top: 10px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px #0354df;
+}
+
+body main #primary p {
+  font-size: 1em;
+  text-shadow: 2px 2px #0354df;
+}
+
+body,
+html {
+  height: 100%;
+}
+/*# sourceMappingURL=style.css.map */
