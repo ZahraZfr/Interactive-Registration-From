@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$padding:15px;
+$Colors: (primary : #005dff,
+    accent : #fff6bb);
+
+// use function in sass
+@function color($color-name) {
+    @return map-get($Colors, $color-name)
+}
+
+body {
+    font-family: 'Montserrat';
+    overflow: hidden;
+
+    header {
+        a {
+            text-decoration: none;
+            color: #fff;
+            padding: $padding;
+            display: block;
+            text-decoration: uppercase;
+        }
+    }
+
+    #bg {
+        clip-path: polygon(100% 0, 100% 82%, 45% 100%, 0 100%, 0 0);
+        // background-color: map-get($Colors, $primary);
+        background-color: color(primary);
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        form {
+            width: 400px;
+            background-color: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            padding: 20px 40px;
+            
+
+            .form-control {
+                margin-bottom: 12px;
+                padding-bottom: 10px;
+                position: relative;
+
+                label {
+                    display: inline-block;
+                    margin-bottom: 5px;
+                }
+
+                input {
+                    display: block;
+                    width: 100%;
+                    padding: 10px;
+                    border-radius: 4px;
+                    border: 2px solid #d8d1d1;
+                }
+                small{
+                    position: absolute;
+                    margin: 3px;
+                    font-size: 12px;
+                }
+                button{
+                    margin-top: 10px;
+                    background-color: rgb(4,4,95);
+                    color:#fff;
+                    padding: 10px 20px;
+                    width: 100%;
+                    border-radius: 4px;
+                    border: 2px solid rgb(4,4,95);
+                    cursor: pointer;
+                }
+            }
+            .form-control.success input{
+                border: 2px solid green;
+            }
+            .form-control.error input{
+                border: 2px solid rgb(250, 99, 11);
+            }
+        }
+        
+    }
+}
+
+body,
+html {
+    height: 100%;
+}

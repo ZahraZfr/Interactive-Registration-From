@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat';
+  overflow: hidden;
+}
+
+body header a {
+  text-decoration: none;
+  color: #fff;
+  padding: 15px;
+  display: block;
+  -webkit-text-decoration: uppercase;
+          text-decoration: uppercase;
+}
+
+body #bg {
+  -webkit-clip-path: polygon(100% 0, 100% 82%, 45% 100%, 0 100%, 0 0);
+          clip-path: polygon(100% 0, 100% 82%, 45% 100%, 0 100%, 0 0);
+  background-color: #005dff;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+body main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+
+body main form {
+  width: 400px;
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 20px 40px;
+}
+
+body main form .form-control {
+  margin-bottom: 12px;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+body main form .form-control label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+body main form .form-control input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 2px solid #d8d1d1;
+}
+
+body main form .form-control small {
+  position: absolute;
+  margin: 3px;
+  font-size: 12px;
+}
+
+body main form .form-control button {
+  margin-top: 10px;
+  background-color: #04045f;
+  color: #fff;
+  padding: 10px 20px;
+  width: 100%;
+  border-radius: 4px;
+  border: 2px solid #04045f;
+  cursor: pointer;
+}
+
+body main form .form-control.success input {
+  border: 2px solid green;
+}
+
+body main form .form-control.error input {
+  border: 2px solid #fa630b;
+}
+
+body,
+html {
+  height: 100%;
+}
+/*# sourceMappingURL=style.css.map */
