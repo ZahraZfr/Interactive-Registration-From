@@ -65,6 +65,7 @@ body main {
 }
 
 body main form {
+  width: 80%;
   background-color: #f0ebeb;
   border-radius: 30px;
   overflow: hidden;
