@@ -3,7 +3,7 @@ const http = require("http");
 const url = require("url");
 const fs = require("fs");
 
-//npm i mime-types
+//
 const lookup = require("mime-types").lookup;
 
 const server = http.createServer((req, res) => {
