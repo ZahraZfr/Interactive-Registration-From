@@ -1,5 +1,16 @@
 {
   "dependencies": {
+    "@lo-agency/logger": "^1.3.1",
     "mime-types": "^2.1.32"
-  }
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "registration-form",
+  "description": "this is a registeration form that user should enter name and some information that is defined in it.\r for This project has used HTML , SCSS , JS and Node.JS",
+  "version": "1.0.0",
+  "main": "server.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
