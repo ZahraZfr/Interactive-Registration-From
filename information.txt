@@ -66,3 +66,20 @@ Content-Disposition: form-data; name="cnfpwd"
 
 aazz
 ------WebKitFormBoundaryaGkot0geYqkI5NKh--
+------WebKitFormBoundarySpFsiYEzX8qk21Py
+Content-Disposition: form-data; name="username"
+
+nana
+------WebKitFormBoundarySpFsiYEzX8qk21Py
+Content-Disposition: form-data; name="email"
+
+Zahra.Zafarzade1378@gmail.com
+------WebKitFormBoundarySpFsiYEzX8qk21Py
+Content-Disposition: form-data; name="pwd"
+
+aaaqqq111
+------WebKitFormBoundarySpFsiYEzX8qk21Py
+Content-Disposition: form-data; name="cnfpwd"
+
+aaaqqq111
+------WebKitFormBoundarySpFsiYEzX8qk21Py--
