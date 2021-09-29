@@ -18,8 +18,6 @@ const server = http.createServer((req, res) => {
     })
     res.writeHead(200);
     res.end("you are registered");
-
-
   } else {
     //handle the request and send back a static file
     //from a folder called `public`
