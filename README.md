@@ -14,7 +14,7 @@ first npm should install , use below code in terminal or CMD or PWD
 ```bash
 npm install
 ```
-then , for serve website with node.js , open project's folder in editor and open terminal  or open terminal or CMD in project folder path and enter :
+then , for serve website with node.js , open project's folder in editor and open terminal in it  or open terminal or CMD in project folder path and enter :
 ```bash
 node server 
 ```
