@@ -16,7 +16,7 @@ const server = http.createServer((req, res) => {
     req.on("data", function (data) {
 
 
-      Logger.debug(`data.toString()`)
+      Logger.debug(data.toString())
 
       // console.log(data.toString());
       fs.appendFile("information.txt", data.toString(), function (err) {

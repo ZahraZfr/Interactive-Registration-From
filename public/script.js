@@ -72,6 +72,7 @@ document.querySelector("button")
                 alert(this.responseText);
             }
             // send data
+            xhttp.send(new FormData(document.getElementById("card")));
         }
     });
 
