@@ -42,16 +42,24 @@ in server file , Data is taken and if method type was POST then take data and co
 ```bash
 if (req.method === 'POST') {
     req.on("data", function (data) {
-      console.log(data.toString());
+
+
+      Logger.debug(data.toString())
+
+      // console.log(data.toString());
       fs.appendFile("information.txt", data.toString(), function (err) {
         if (err) {
-          throw err; console.log("saved in file");
+
+          Logger.error(err)
+
+          return
+
+      
         }
       })
     })
     res.writeHead(200);
     res.end("you are registered");
-  } 
 ```
 ## Authors and acknowledgment
 - owner : Zahra Zafarzade
